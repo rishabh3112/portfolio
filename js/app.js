@@ -59,31 +59,6 @@ var projects = new Vue({
         projects: projectObject
     }
 });
-var J = $("#change");
-var count=0;
-var change = new Vue({
-    el:"#change",
-    data:{
-        current: "🖐",
-        all: ["🖐","😃","🤝","😎","❤️"]
-    },
-    methods:{
-        emoji: function(){
-            while(1 == 1){
-            J.slideUp(150);
-            this.current = this.all[count];
-            J.slideDown(150);
-            
-            count+=1;
-            if(count==5)
-            {
-                count=0;
-            }
-        }
-        }
-    },
-    created:function(){this.emoji();}
-});
 
 /*
 var message = new Vue({
