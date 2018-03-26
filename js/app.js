@@ -59,7 +59,7 @@ var projects = new Vue({
         projects: projectObject
     }
 });
-int c=0;
+var count=0;
 var change = new Vue({
     el:"#change",
     data:{
