@@ -79,6 +79,7 @@ var change = new Vue({
                 count=0;
             }
         }
+        }
     },
     created:function(){this.emoji();}
 });
