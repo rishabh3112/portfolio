@@ -59,6 +59,7 @@ var projects = new Vue({
         projects: projectObject
     }
 });
+var J = $("#change");
 var count=0;
 var change = new Vue({
     el:"#change",
@@ -69,9 +70,9 @@ var change = new Vue({
     methods:{
         emoji: function(){
             while(1 == 1){
-            $("#change").slideUp(150);
+            J.slideUp(150);
             this.current = this.all[count];
-            $("#change").slideDown(150);
+            J.slideDown(150);
             
             count+=1;
             if(count==5)
