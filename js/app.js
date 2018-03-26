@@ -59,6 +59,27 @@ var projects = new Vue({
         projects: projectObject
     }
 });
+int c=0;
+var change = new Vue({
+    el:"#change",
+    data:{
+        current: "🖐",
+        all: ["🖐","😃","🤝","😎","❤️"]
+    },
+    methods:{
+        emoji: function(){
+            $("#change").slideUp(150);
+            this.current = this.all[count];
+            $("#change").slideDown(150);
+            
+            count+=1;
+            if(count==5)
+            {
+                count=0;
+            }
+        }
+    }
+});
 
 /*
 var message = new Vue({
