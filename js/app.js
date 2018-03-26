@@ -68,6 +68,7 @@ var change = new Vue({
     },
     methods:{
         emoji: function(){
+            while(1 == 1){
             $("#change").slideUp(150);
             this.current = this.all[count];
             $("#change").slideDown(150);
@@ -78,7 +79,8 @@ var change = new Vue({
                 count=0;
             }
         }
-    }
+    },
+    created:function(){this.emoji();}
 });
 
 /*
